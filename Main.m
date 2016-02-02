@@ -9,11 +9,13 @@ rng(42);
 X = rand(N, d)-0.5;
 X = cumsum(X);
 plot(X);
-drawnow;
-
+hold on;
 i = 1;
 distort = 100;
-X(:,1) = [-cumsum(repmat(0.1,distort,1)); X((distort+1):N,1)];
+X(:,i) = [-cumsum(repmat(0.1,distort,i)); X((distort+1):N,i)];
+plot(X(:,i));
+title('Population of the different Time Series');
+drawnow;
 
 scores = [];
 for time = 1:N
@@ -29,3 +31,5 @@ figure;
 plot((X(:,1) - mean(X(:,1)))/std(X(:,1)));
 hold on;
 plot(scores);
+legend('norm TS', 'score');
+title('The Time Series of interest and its related PGA score');
