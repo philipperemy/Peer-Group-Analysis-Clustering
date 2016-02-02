@@ -17,12 +17,15 @@ An example is provided below:
 
 A bunch of time series is generated. The unconditional mean is 0.
 
-<img src="fig1.png" align="center" width="512">
+<center>
+<img src="fig1.png" width="512">
+</center>
 
 We analyse the (normalised) time series in blue. At the beginning, it drops constantly before reverting back to the confidence intervals.
 The score (shown in orange) is a t-statistics that summarises how far our time series is deviating from the equilibrium of the peer group.
 Each time, the series is deviating from the confidence intervals (e.g. 90%, 95%), the score sharply increases. We can then flag those objects
 with scores that deviate most substantially as worth of closer investigation (e.g. fraud detection).
 
-
+<center>
 <img src="fig2.png" align="center" width="512">
+</center>
