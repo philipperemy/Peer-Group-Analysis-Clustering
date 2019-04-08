@@ -1,4 +1,4 @@
-# Peer-Group-Analysis-Clustering
+# Peer Group Analysis Clustering (Matlab)
 Unsupervised Clustering of Time Series using Peer Group Analysis PGA
 
 Peer group analysis is a new tool for monitoring behaviour over time in data mining
